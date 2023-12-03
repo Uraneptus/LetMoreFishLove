@@ -1,0 +1,37 @@
+modLoader="javafml"
+loaderVersion="[43,)"
+license="MIT License"
+
+[[mods]]
+modId="letmorelove"
+version="${file.jarVersion}" #mandatory
+displayName="Let More Love" #mandatory
+credits="" #optional
+logoFile = "letfishlove_icon.png"
+authors="Uraneptus" #optional
+description='''
+'''
+[[dependencies.letmorelove]]
+    modId="forge"
+    mandatory=true
+    versionRange="[43,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.letmorelove]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19.2,1.20)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.letmorelove]]
+    modId="letfishlove"
+    mandatory=true
+    versionRange="[1.0.3,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.letmorelove]]
+    modId="upgrade_aquatic"
+    mandatory=false
+    versionRange="[5.1.0,)"
+    ordering="AFTER"
+    side="BOTH"
