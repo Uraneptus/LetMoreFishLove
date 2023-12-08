@@ -40,7 +40,7 @@ public class LMLLootTableProvider extends LootTableProvider {
 
         @Override
         protected void addTables() {
-            //RoeBlock.getAllBlocks().forEach(this::dropSelf);
+            RegistryHelper.BLOCKS.getEntries().forEach(block -> dropSelf(block.get()));
         }
 
         @Override

@@ -9,7 +9,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 public class CompatHandler {
     public static final String UPGRADE_AUQUATIC = "upgrade_aquatic";
 
-    private static boolean isLoaded(String id) {
+    public static boolean isLoaded(String id) {
         return ModList.get().isLoaded(id);
     }
 

@@ -91,7 +91,7 @@ dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
     implementation fg.deobf("curse.maven:geckolib-388172:4407241")
     implementation fg.deobf("curse.maven:naturalist-627986:4847008")
-    implementation fg.deobf("curse.maven:let-fish-love-941186:4911855")
+    implementation fg.deobf("curse.maven:let-fish-love-941186:4936182")
     implementation fg.deobf("curse.maven:blueprint-382216:4749000")
     implementation fg.deobf("curse.maven:environmental-388992:4415514")
     implementation fg.deobf("curse.maven:upgrade-aquatic-326895:4777515")

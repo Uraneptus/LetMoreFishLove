@@ -6,6 +6,10 @@ import com.uraneptus.letmorelove.core.RegistryHelper;
 import com.uraneptus.letmorelove.data.client.LMLBlockStateProvider;
 import com.uraneptus.letmorelove.data.client.LMLItemModelProvider;
 import com.uraneptus.letmorelove.data.client.LMLLangProvider;
+import com.uraneptus.letmorelove.data.server.LMLLootTableProvider;
+import com.uraneptus.letmorelove.data.server.tags.LMLBlockTagsProvider;
+import com.uraneptus.letmorelove.data.server.tags.LMLEntityTagsProvider;
+import com.uraneptus.letmorelove.data.server.tags.LMLItemTagsProvider;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.common.MinecraftForge;
@@ -33,12 +37,9 @@ public class LetMoreLoveMod {
 
         //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, LMLConfig.COMMON);
 
+        CompatHandler.initRegistries();
         RegistryHelper.BLOCKS.register(bus);
         RegistryHelper.ITEMS.register(bus);
-        CompatHandler.initRegistries();
-
-
-
 
         MinecraftForge.EVENT_BUS.register(this);
     }
@@ -54,12 +55,12 @@ public class LetMoreLoveMod {
         generator.addProvider(includeClient, new LMLBlockStateProvider(generator, fileHelper));
         generator.addProvider(includeClient, new LMLItemModelProvider(generator, fileHelper));
         generator.addProvider(includeClient, new LMLLangProvider(generator));
-/*
+
         LMLBlockTagsProvider blockTagsProvider = new LMLBlockTagsProvider(generator, fileHelper);
         generator.addProvider(includeServer, blockTagsProvider);
         generator.addProvider(includeServer, new LMLItemTagsProvider(generator, blockTagsProvider, fileHelper));
+        generator.addProvider(includeServer, new LMLEntityTagsProvider(generator, fileHelper));
         generator.addProvider(includeServer, new LMLLootTableProvider(generator));
-         */
     }
 
 }
