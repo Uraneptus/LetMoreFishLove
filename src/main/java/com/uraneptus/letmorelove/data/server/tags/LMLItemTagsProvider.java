@@ -18,14 +18,7 @@ public class LMLItemTagsProvider extends ItemTagsProvider {
 
     protected void addTags() {
         tag(ModItemTags.PERCH).add(Items.COAL);
-
-
-        /*
-        tag(LFLItemTags.COD).add(Items.BEETROOT);
-        tag(LFLItemTags.SALMON).add(Items.SWEET_BERRIES);
-        tag(LFLItemTags.PUFFERFISH).add(Items.GOLDEN_CARROT);
-        tag(LFLItemTags.TROPICAL_FISH).add(Items.MELON_SLICE);
-
-         */
+        tag(ModItemTags.LIONFISH).add(Items.DANDELION);
+        tag(ModItemTags.PIKE).add(Items.PINK_DYE);
     }
 }

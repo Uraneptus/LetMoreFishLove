@@ -24,10 +24,4 @@ public class ModRoeBlock extends RoeBlock {
         }
         return super.calculateHatchAmount(pLevel);
     }
-
-    public static Iterable<Block> getAllBlocks() {
-        return (Iterable) ForgeRegistries.BLOCKS.getValues().stream().filter((block) -> {
-            return ForgeRegistries.BLOCKS.getKey(block) != null && "letfishlove".equals(ForgeRegistries.BLOCKS.getKey(block).getNamespace()) && block instanceof RoeBlock;
-        }).collect(Collectors.toList());
-    }
 }

@@ -19,5 +19,7 @@ public class LMLEntityTagsProvider extends EntityTypeTagsProvider {
     public void addTags() {
         //TODO make mod dependent
         tag(LFLEntityTags.BREEDABLE_FISH).add(UAEntityTypes.PERCH.get());
+        tag(LFLEntityTags.BREEDABLE_FISH).add(UAEntityTypes.LIONFISH.get());
+        tag(LFLEntityTags.BREEDABLE_FISH).add(UAEntityTypes.PIKE.get());
     }
 }

@@ -26,10 +26,9 @@ public class RegistryHelper {
         return block;
     }
 
-    public static RegistryObject<Block> createCustomRoeWithItem(EntityType<?> entityType, Supplier<Block> roeBlock) {
-        String name = ForgeRegistries.ENTITY_TYPES.getKey(entityType).getPath();
-        RegistryObject<Block> block = BLOCKS.register(name + "_roe_block", roeBlock);
-        ITEMS.register(name + "_roe", () -> new RoeItem(block));
+    public static RegistryObject<Block> createCustomRoeWithItem(String fishName, Supplier<EntityType<?>> entityType, Supplier<Block> roeBlock) {
+        RegistryObject<Block> block = BLOCKS.register(fishName + "_roe_block", roeBlock);
+        ITEMS.register(fishName + "_roe", () -> new RoeItem(block));
 
         return block;
     }

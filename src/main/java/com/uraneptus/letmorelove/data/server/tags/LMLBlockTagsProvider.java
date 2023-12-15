@@ -21,6 +21,8 @@ public class LMLBlockTagsProvider extends BlockTagsProvider {
         RegistryHelper.BLOCKS.getEntries().forEach(block -> tag(BlockTags.MINEABLE_WITH_SHOVEL).add(block.get()));
 
         tag(ModBlockTags.PERCH).add(UACompat.PERCH_ROE_BLOCK.get());
+        tag(ModBlockTags.LIONFISH).add(UACompat.LIONFISH_ROE_BLOCK.get());
+        tag(ModBlockTags.PIKE).add(UACompat.PIKE_ROE_BLOCK.get());
 
 
         /*
