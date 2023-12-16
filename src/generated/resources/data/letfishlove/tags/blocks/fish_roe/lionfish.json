@@ -1,5 +1,8 @@
 {
   "values": [
-    "letmorelove:lionfish_roe_block"
+    {
+      "id": "upgrade_aquatic:lionfish_roe_block",
+      "required": false
+    }
   ]
 }

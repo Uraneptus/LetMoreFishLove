@@ -1,5 +1,8 @@
 {
   "values": [
-    "letmorelove:pike_roe_block"
+    {
+      "id": "upgrade_aquatic:pike_roe_block",
+      "required": false
+    }
   ]
 }

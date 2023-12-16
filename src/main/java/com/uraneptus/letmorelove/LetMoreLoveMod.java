@@ -18,7 +18,6 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
@@ -26,7 +25,7 @@ import org.slf4j.Logger;
 @Mod.EventBusSubscriber(modid = LetMoreLoveMod.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
 public class LetMoreLoveMod {
     public static final String MOD_ID = "letmorelove";
-    private static final Logger LOGGER = LogUtils.getLogger();
+    public static final Logger LOGGER = LogUtils.getLogger();
     public static ResourceLocation modPrefix(String path) {
         return new ResourceLocation(LetMoreLoveMod.MOD_ID, path);
     }

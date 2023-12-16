@@ -1,7 +1,16 @@
 {
   "values": [
-    "upgrade_aquatic:perch",
-    "upgrade_aquatic:lionfish",
-    "upgrade_aquatic:pike"
+    {
+      "id": "upgrade_aquatic:perch",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:pike",
+      "required": false
+    },
+    {
+      "id": "upgrade_aquatic:lionfish",
+      "required": false
+    }
   ]
 }
