@@ -1,7 +1,10 @@
 {
   "values": [
-    "letmorelove:perch_roe_block",
-    "letmorelove:lionfish_roe_block",
-    "letmorelove:pike_roe_block"
+    "letmorefishlove:perch_roe_block",
+    "letmorefishlove:lionfish_roe_block",
+    "letmorefishlove:pike_roe_block",
+    "letmorefishlove:blizzard_fin_roe_block",
+    "letmorefishlove:bass_roe_block",
+    "letmorefishlove:catfish_roe_block"
   ]
 }

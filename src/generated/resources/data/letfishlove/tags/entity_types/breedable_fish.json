@@ -11,6 +11,18 @@
     {
       "id": "upgrade_aquatic:lionfish",
       "required": false
+    },
+    {
+      "id": "naturalist:bass",
+      "required": false
+    },
+    {
+      "id": "naturalist:catfish",
+      "required": false
+    },
+    {
+      "id": "unusualfishmod:blizzardfin",
+      "required": false
     }
   ]
 }
