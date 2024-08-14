@@ -34,8 +34,6 @@ public class LetMoreFishLoveMod {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addListener(this::gatherData);
 
-        //ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, LMLConfig.COMMON);
-
         RegistryHelper.BLOCKS.register(bus);
         RegistryHelper.ITEMS.register(bus);
         CompatHandler.initRegistries();

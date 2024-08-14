@@ -95,7 +95,7 @@ dependencies {
     implementation fg.deobf("curse.maven:naturalist-627986:4847008")
     //implementation fg.deobf("curse.maven:let-fish-love-941186:4957134")
     implementation fg.deobf("curse.maven:blueprint-382216:4749000")
-    implementation fg.deobf("curse.maven:environmental-388992:4415514")
+    implementation fg.deobf("curse.maven:environmental-388992:5292368")
     implementation fg.deobf("curse.maven:upgrade-aquatic-326895:4777515")
     implementation fg.deobf("curse.maven:sullys-mod-386534:4775845")
     implementation fg.deobf("curse.maven:citadel-331936:4556677")

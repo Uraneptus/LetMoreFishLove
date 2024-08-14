@@ -2,6 +2,7 @@ package com.uraneptus.letmorefishlove.data.server.tags;
 
 import codyhuh.unusualfishmod.core.registry.UFEntities;
 import com.starfish_studios.naturalist.registry.NaturalistEntityTypes;
+import com.teamabnormals.environmental.core.registry.EnvironmentalEntityTypes;
 import com.teamabnormals.upgrade_aquatic.core.registry.UAEntityTypes;
 import com.uraneptus.letfishlove.LetFishLoveMod;
 import com.uraneptus.letfishlove.core.other.LFLEntityTags;
@@ -28,7 +29,7 @@ public class LMLEntityTagsProvider extends EntityTypeTagsProvider {
                 .addOptional(rlFromEntity(CompatHandler.UPGRADE_AUQUATIC, UAEntityTypes.LIONFISH.get()))
                 .addOptional(rlFromEntity(CompatHandler.NATURALIST, NaturalistEntityTypes.BASS.get()))
                 .addOptional(rlFromEntity(CompatHandler.NATURALIST, NaturalistEntityTypes.CATFISH.get()))
-                .addOptional(rlFromEntity(CompatHandler.UNUSUAL_FISH, UFEntities.BLIZZARDFIN.get()));
+                .addOptional(rlFromEntity(CompatHandler.ENVIRONMENTAL, EnvironmentalEntityTypes.KOI.get()));
     }
 
     public ResourceLocation rlFromEntity(String modId, EntityType<?> entityType) {

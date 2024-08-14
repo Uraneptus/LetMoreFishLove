@@ -4,6 +4,7 @@ import com.uraneptus.letfishlove.common.blocks.RoeBlock;
 import com.uraneptus.letfishlove.common.items.RoeItem;
 import com.uraneptus.letfishlove.core.other.LFLProperties;
 import com.uraneptus.letmorefishlove.LetMoreFishLoveMod;
+import com.uraneptus.letmorefishlove.common.CompatRoeBlock;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -26,8 +27,8 @@ public class RegistryHelper {
         return block;
     }
 
-    public static RegistryObject<Block> createCustomRoeWithItem(String fishName, Supplier<Block> roeBlock) {
-        RegistryObject<Block> block = BLOCKS.register(fishName + "_roe_block", roeBlock);
+    public static RegistryObject<Block> createCompatRoeWithItem(String fishName, Supplier<EntityType<?>> entityType) {
+        RegistryObject<Block> block = BLOCKS.register(fishName + "_roe_block", () -> new CompatRoeBlock(entityType, LFLProperties.roeBlockProperties()));
         ITEMS.register(fishName + "_roe", () -> new RoeItem(block));
 
         return block;

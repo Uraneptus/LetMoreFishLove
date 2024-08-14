@@ -25,7 +25,7 @@ public class LMLItemTagsProvider extends ItemTagsProvider {
         tag(ModItemTags.PIKE).addOptional(new ResourceLocation(CompatHandler.UPGRADE_AUQUATIC, "blue_pickerelweed"));
         tag(ModItemTags.BASS).add(Items.DRIED_KELP);
         tag(ModItemTags.CATFISH).add(Items.DRIED_KELP);
-        tag(ModItemTags.BLIZZARD_FIN).add(Items.COAL);
+        tag(ModItemTags.KOI).addOptional(new ResourceLocation(CompatHandler.ENVIRONMENTAL, "cherries"));
     }
 
     public ResourceLocation rlFromBlock(String modId, Block block) {

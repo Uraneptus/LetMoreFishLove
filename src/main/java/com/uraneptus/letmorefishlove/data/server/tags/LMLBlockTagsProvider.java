@@ -2,9 +2,9 @@ package com.uraneptus.letmorefishlove.data.server.tags;
 
 import com.uraneptus.letmorefishlove.LetMoreFishLoveMod;
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
+import com.uraneptus.letmorefishlove.core.compat.ENCompat;
 import com.uraneptus.letmorefishlove.core.compat.NACompat;
 import com.uraneptus.letmorefishlove.core.compat.UACompat;
-import com.uraneptus.letmorefishlove.core.compat.UFCompat;
 import com.uraneptus.letmorefishlove.core.tags.ModBlockTags;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;
@@ -30,7 +30,7 @@ public class LMLBlockTagsProvider extends BlockTagsProvider {
         tag(ModBlockTags.PIKE).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.PIKE_ROE_BLOCK.get()));
         tag(ModBlockTags.BASS).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.BASS_ROE_BLOCK.get()));
         tag(ModBlockTags.CATFISH).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.CATFISH_ROE_BLOCK.get()));
-        tag(ModBlockTags.BLIZZARD_FIN).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UFCompat.BLIZZARD_FIN_ROE_BLOCK.get()));
+        tag(ModBlockTags.KOI).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, ENCompat.KOI_ROE_BLOCK.get()));
     }
 
     public ResourceLocation rlFromBlock(String modId, Block block) {

@@ -12,7 +12,7 @@ public class ModBlockTags {
     public static final TagKey<Block> PIKE = create(CompatHandler.UPGRADE_AUQUATIC, "pike");
     public static final TagKey<Block> BASS = create(CompatHandler.NATURALIST, "bass");
     public static final TagKey<Block> CATFISH = create(CompatHandler.NATURALIST, "catfish");
-    public static final TagKey<Block> BLIZZARD_FIN = create(CompatHandler.UNUSUAL_FISH, "blizzard_fin");
+    public static final TagKey<Block> KOI = create(CompatHandler.ENVIRONMENTAL, "koi");
 
     public static TagKey<Block> create(String modId, String fishName) {
         return TagKey.create(Registry.BLOCK_REGISTRY, LetFishLoveMod.modPrefix("fish_roe/" + modId + "/" + fishName));

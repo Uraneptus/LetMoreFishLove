@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/frogspawn",
-  "render_type": "minecraft:translucent",
-  "textures": {
-    "particle": "letmorefishlove:block/blizzard_fin_roe_block",
-    "texture": "letmorefishlove:block/blizzard_fin_roe_block"
-  }
-}
