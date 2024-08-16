@@ -1,8 +1,6 @@
 package com.uraneptus.letmorefishlove.core.compat;
 
 import com.teamabnormals.upgrade_aquatic.core.registry.UAEntityTypes;
-import com.uraneptus.letfishlove.core.other.LFLProperties;
-import com.uraneptus.letmorefishlove.common.PikeRoeBlock;
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;

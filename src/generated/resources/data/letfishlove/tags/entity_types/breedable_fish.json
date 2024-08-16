@@ -23,6 +23,10 @@
     {
       "id": "environmental:koi",
       "required": false
+    },
+    {
+      "id": "sullysmod:lanternfish",
+      "required": false
     }
   ]
 }

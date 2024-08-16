@@ -7,6 +7,7 @@ import com.teamabnormals.upgrade_aquatic.core.registry.UAEntityTypes;
 import com.uraneptus.letfishlove.LetFishLoveMod;
 import com.uraneptus.letfishlove.core.other.LFLEntityTags;
 import com.uraneptus.letmorefishlove.core.CompatHandler;
+import com.uraneptus.sullysmod.core.registry.SMEntityTypes;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.EntityTypeTagsProvider;
 import net.minecraft.resources.ResourceLocation;
@@ -29,7 +30,8 @@ public class LMLEntityTagsProvider extends EntityTypeTagsProvider {
                 .addOptional(rlFromEntity(CompatHandler.UPGRADE_AUQUATIC, UAEntityTypes.LIONFISH.get()))
                 .addOptional(rlFromEntity(CompatHandler.NATURALIST, NaturalistEntityTypes.BASS.get()))
                 .addOptional(rlFromEntity(CompatHandler.NATURALIST, NaturalistEntityTypes.CATFISH.get()))
-                .addOptional(rlFromEntity(CompatHandler.ENVIRONMENTAL, EnvironmentalEntityTypes.KOI.get()));
+                .addOptional(rlFromEntity(CompatHandler.ENVIRONMENTAL, EnvironmentalEntityTypes.KOI.get()))
+                .addOptional(rlFromEntity(CompatHandler.SULLYS_MOD, SMEntityTypes.LANTERNFISH.get()));
     }
 
     public ResourceLocation rlFromEntity(String modId, EntityType<?> entityType) {

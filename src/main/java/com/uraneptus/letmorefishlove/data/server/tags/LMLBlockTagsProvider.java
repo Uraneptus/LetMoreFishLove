@@ -4,6 +4,7 @@ import com.uraneptus.letmorefishlove.LetMoreFishLoveMod;
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
 import com.uraneptus.letmorefishlove.core.compat.ENCompat;
 import com.uraneptus.letmorefishlove.core.compat.NACompat;
+import com.uraneptus.letmorefishlove.core.compat.SMCompat;
 import com.uraneptus.letmorefishlove.core.compat.UACompat;
 import com.uraneptus.letmorefishlove.core.tags.ModBlockTags;
 import net.minecraft.data.DataGenerator;
@@ -31,6 +32,7 @@ public class LMLBlockTagsProvider extends BlockTagsProvider {
         tag(ModBlockTags.BASS).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.BASS_ROE_BLOCK.get()));
         tag(ModBlockTags.CATFISH).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.CATFISH_ROE_BLOCK.get()));
         tag(ModBlockTags.KOI).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, ENCompat.KOI_ROE_BLOCK.get()));
+        tag(ModBlockTags.LANTERNFISH).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, SMCompat.LANTERNFISH_ROE_BLOCK.get()));
     }
 
     public ResourceLocation rlFromBlock(String modId, Block block) {
