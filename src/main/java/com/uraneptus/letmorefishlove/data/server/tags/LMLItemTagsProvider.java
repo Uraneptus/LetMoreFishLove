@@ -22,7 +22,7 @@ public class LMLItemTagsProvider extends ItemTagsProvider {
     protected void addTags() {
         tag(ModItemTags.PERCH).add(Items.WHEAT_SEEDS);
         tag(ModItemTags.LIONFISH).add(Items.TROPICAL_FISH);
-        tag(ModItemTags.PIKE).addOptional(new ResourceLocation(CompatHandler.UPGRADE_AUQUATIC, "blue_pickerelweed"));
+        tag(ModItemTags.PIKE).add(Items.SALMON);
         tag(ModItemTags.BASS).add(Items.DRIED_KELP);
         tag(ModItemTags.CATFISH).add(Items.DRIED_KELP);
         tag(ModItemTags.LANTERNFISH).add(Items.GLOW_BERRIES);
