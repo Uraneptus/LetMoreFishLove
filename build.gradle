@@ -91,17 +91,22 @@ repositories {
 
 dependencies {
     minecraft "net.minecraftforge:forge:${mc_version}-${forge_version}"
-    implementation fg.deobf("curse.maven:geckolib-388172:4407241")
-    implementation fg.deobf("curse.maven:naturalist-627986:4847008")
-    //implementation fg.deobf("curse.maven:let-fish-love-941186:4957134")
-    implementation fg.deobf("curse.maven:blueprint-382216:4749000")
-    implementation fg.deobf("curse.maven:environmental-388992:5292368")
-    implementation fg.deobf("curse.maven:upgrade-aquatic-326895:4777515")
-    implementation fg.deobf("curse.maven:sullys-mod-386534:4775845")
-    implementation fg.deobf("curse.maven:citadel-331936:4556677")
-    implementation fg.deobf("curse.maven:alexs-mobs-426558:4159154")
-    implementation fg.deobf("curse.maven:unusual-fish-mod-568300:4922037")
-    implementation fg.deobf("uraneptus:letfishlove-1.19.2:1.0.6")
+    implementation fg.deobf("uraneptus:letfishlove:2.1.0")
+
+    //Compat mods below
+    implementation fg.deobf("curse.maven:geckolib-388172:5460309") //https://www.curseforge.com/minecraft/mc-mods/geckolib
+    implementation fg.deobf("curse.maven:naturalist-627986:4847009") //https://www.curseforge.com/minecraft/mc-mods/naturalist
+    implementation fg.deobf("curse.maven:blueprint-382216:5292242") //https://www.curseforge.com/minecraft/mc-mods/blueprint
+    //implementation fg.deobf("curse.maven:environmental-388992:5292368") //https://www.curseforge.com/minecraft/mc-mods/environmental
+    implementation fg.deobf("curse.maven:upgrade-aquatic-326895:5615651") //https://www.curseforge.com/minecraft/mc-mods/upgrade-aquatic
+    implementation fg.deobf("curse.maven:sullys-mod-386534:5043956") //https://www.curseforge.com/minecraft/mc-mods/sullys-mod
+    implementation fg.deobf("curse.maven:citadel-331936:5633260") //https://www.curseforge.com/minecraft/mc-mods/citadel
+    implementation fg.deobf("curse.maven:alexs-mobs-426558:5160697") //https://www.curseforge.com/minecraft/mc-mods/alexs-mobs
+    implementation fg.deobf("curse.maven:unusual-fish-mod-568300:5603731") //https://www.curseforge.com/minecraft/mc-mods/unusual-fish-mod
+    implementation fg.deobf("curse.maven:fins-and-tails-427471:5547163") //https://www.curseforge.com/minecraft/mc-mods/fins-and-tails
+    implementation fg.deobf("curse.maven:bettas-420951:5097782") //https://www.curseforge.com/minecraft/mc-mods/bettas
+    implementation fg.deobf("curse.maven:rainbow-reef-936849:4999914") //https://www.curseforge.com/minecraft/mc-mods/rainbow-reef
+    implementation fg.deobf("curse.maven:aquaculture-60028:5585290") //https://www.curseforge.com/minecraft/mc-mods/aquaculture
 }
 
 jar {

@@ -1,7 +1,5 @@
 package com.uraneptus.letmorefishlove.common;
 
-import com.teamabnormals.environmental.common.entity.animal.koi.Koi;
-import com.teamabnormals.environmental.common.entity.animal.koi.KoiBreed;
 import com.teamabnormals.upgrade_aquatic.common.entity.animal.Pike;
 import com.teamabnormals.upgrade_aquatic.common.entity.animal.PikeType;
 import com.uraneptus.letfishlove.common.blocks.RoeBlock;
@@ -32,6 +30,7 @@ public class CompatRoeBlock extends RoeBlock {
                 }
             }
         }
+        /*
         if (CompatHandler.isEnvironmental) {
             if (waterAnimal instanceof Koi koi) {
                 if (fromBreeding && this.getParentEntity() instanceof Koi parentFish) {
@@ -42,6 +41,8 @@ public class CompatRoeBlock extends RoeBlock {
             }
 
         }
+
+         */
 
     }
 }

@@ -27,7 +27,7 @@ public class CompatHandler {
     public static void initRegistries() {
         if (isUA) UACompat.init();
         if (isNaturalist) NACompat.init();
-        if (isEnvironmental) ENCompat.init();
+        //if (isEnvironmental) ENCompat.init();
         if (isSM) SMCompat.init();
     }
 

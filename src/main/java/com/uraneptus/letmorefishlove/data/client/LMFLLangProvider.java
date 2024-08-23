@@ -3,7 +3,7 @@ package com.uraneptus.letmorefishlove.data.client;
 import com.google.common.collect.Lists;
 import com.uraneptus.letmorefishlove.LetMoreFishLoveMod;
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.data.LanguageProvider;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -12,9 +12,9 @@ import java.util.List;
 import java.util.Objects;
 import java.util.function.Supplier;
 
-public class LMLLangProvider extends LanguageProvider {
-    public LMLLangProvider(DataGenerator gen) {
-        super(gen, LetMoreFishLoveMod.MOD_ID, "en_us");
+public class LMFLLangProvider extends LanguageProvider {
+    public LMFLLangProvider(PackOutput output) {
+        super(output, LetMoreFishLoveMod.MOD_ID, "en_us");
     }
 
     @Override

@@ -4,19 +4,19 @@ import com.uraneptus.letfishlove.common.blocks.RoeBlock;
 import com.uraneptus.letmorefishlove.LetMoreFishLoveMod;
 
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
 import net.minecraftforge.common.data.ExistingFileHelper;
 
-import static com.uraneptus.letmorefishlove.data.LMLDatagenUtil.*;
+import static com.uraneptus.letmorefishlove.data.LMFLDatagenUtil.*;
 
-public class LMLBlockStateProvider extends BlockStateProvider {
+public class LMFLBlockStateProvider extends BlockStateProvider {
 
-    public LMLBlockStateProvider(DataGenerator gen, ExistingFileHelper exFileHelper) {
-        super(gen, LetMoreFishLoveMod.MOD_ID, exFileHelper);
+    public LMFLBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
+        super(output, LetMoreFishLoveMod.MOD_ID, exFileHelper);
     }
 
     @Override

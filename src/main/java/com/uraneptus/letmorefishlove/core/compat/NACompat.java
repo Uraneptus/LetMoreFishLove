@@ -1,6 +1,6 @@
 package com.uraneptus.letmorefishlove.core.compat;
 
-import com.starfish_studios.naturalist.registry.NaturalistEntityTypes;
+import com.starfish_studios.naturalist.core.registry.NaturalistEntityTypes;
 import com.uraneptus.letmorefishlove.core.RegistryHelper;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.registries.RegistryObject;
