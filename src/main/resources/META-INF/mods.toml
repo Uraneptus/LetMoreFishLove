@@ -7,7 +7,7 @@ modId="letmorefishlove"
 version="${file.jarVersion}" #mandatory
 displayName="Let More Fish Love" #mandatory
 credits="" #optional
-logoFile = "letfishlove_icon.png"
+logoFile = "letmorefishlove_icon.png"
 authors="Uraneptus" #optional
 description='''
 '''
