@@ -27,7 +27,13 @@ public class LMFLBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     public void addTags(HolderLookup.Provider pProvider) {
-        RegistryHelper.BLOCKS.getEntries().forEach(block -> tag(BlockTags.MINEABLE_WITH_SHOVEL).add(block.get()));
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.PERCH_ROE_BLOCK.get()))
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.LIONFISH_ROE_BLOCK.get()))
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.PIKE_ROE_BLOCK.get()))
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.BASS_ROE_BLOCK.get()))
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, NACompat.CATFISH_ROE_BLOCK.get()))
+                .addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, SMCompat.LANTERNFISH_ROE_BLOCK.get()));
 
         tag(ModBlockTags.PERCH).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.PERCH_ROE_BLOCK.get()));
         tag(ModBlockTags.LIONFISH).addOptional(rlFromBlock(LetMoreFishLoveMod.MOD_ID, UACompat.LIONFISH_ROE_BLOCK.get()));
